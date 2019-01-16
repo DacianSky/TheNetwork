@@ -1,5 +1,5 @@
 //
-//  NSString+Net.h
+//  NSString+TheNetworkt.h
 //  TheNetwork
 //
 //  Created by DacianSky on 2019/1/15.
@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define ThemeAppJson(filename) [NSString jsonWithAppFileName:(filename) andThemeName:@"theme"]
 
-@interface NSString (Net)
+@interface NSString (TheNetworkt)
 
 + (NSString *)urlDictToStringWithUrlStr:(NSString *)urlStr WithDict:(NSDictionary *)parameters;
 

@@ -10,7 +10,9 @@
 #endif
 #endif
 
-#import "NSString+Net.h"
+#import "TheNetwork.h"
+
+#import "NSString+TheNetwork.h"
 #import "TheApi.h"
 #import "TheBasicRequestHandle.h"
 #import "TheBeanInterface.h"

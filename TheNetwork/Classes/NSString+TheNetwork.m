@@ -1,14 +1,14 @@
 //
-//  NSString+Net.m
+//  NSString+TheNetworkt.m
 //  TheNetwork
 //
 //  Created by DacianSky on 2019/1/15.
 //  Copyright © 2019 sdqvsqiu@gmail.com. All rights reserved.
 //
 
-#import "NSString+Net.h"
+#import "NSString+TheNetwork.h"
 
-@implementation NSString (Net)
+@implementation NSString (TheNetworkt)
 
 + (BOOL)isEmptyOrNull: (NSString *)string
 {
