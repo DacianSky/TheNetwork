@@ -7,7 +7,7 @@
 //
 
 #import "TheBasicRequestHandle.h"
-#import "NSString+Net.h"
+#import "NSString+TheNetwork.h"
 
 extern NSInteger const kRequestInterval;
 extern NSString *const BeanTypeUnpackJsonData;

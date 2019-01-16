@@ -7,7 +7,7 @@
 //
 
 #import "TheNetworkCenter.h"
-#import "NSString+Net.h"
+#import "NSString+TheNetwork.h"
 #import "TheNetworkCache.h"
 #import "TheBasicRequestHandle.h"
 

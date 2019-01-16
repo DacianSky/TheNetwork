@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TheNetwork_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TheNetwork_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_TheNetworkDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_TheNetworkDemoVersionString[];
 
