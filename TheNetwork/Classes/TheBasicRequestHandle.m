@@ -69,7 +69,7 @@ extern NSString *const BeanTypeUnpackJsonData;
 
     [request setHTTPBody:bodyData];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:[NSString stringWithFormat:@"%@", @(bodyData.length)] forHTTPHeaderField:@"Content-Length"];
+    [request setValue:[NSString stringWithFormat:@"%@", @((unsigned long)bodyData.length)] forHTTPHeaderField:@"Content-Length"];
     request.timeoutInterval = kRequestInterval;
 
     NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
