@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		3490A73DB8465CE5E043948B /* Pods-TheNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheNetwork_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheNetwork_Tests/Pods-TheNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4E6F6496D1FA5F53B0E8521C /* TheNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TheNetwork.podspec; path = ../TheNetwork.podspec; sourceTree = "<group>"; };
+		4E6F6496D1FA5F53B0E8521C /* TheNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TheNetwork.podspec; path = ../TheNetwork.podspec; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -27,10 +27,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		67875C6EF504E69508C5BE04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		67875C6EF504E69508C5BE04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7E392D06D1E1BE5C85DBF0A7 /* Pods-TheNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheNetwork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheNetwork_Tests/Pods-TheNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C6CF7CE9E197B91DA17428C1 /* Pods_TheNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D881F6F36E6B928F38943031 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D881F6F36E6B928F38943031 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +150,7 @@
 				ORGANIZATIONNAME = "sdqvsqiu@gmail.com";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = FA96LB4633;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -330,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3490A73DB8465CE5E043948B /* Pods-TheNetwork_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = FA96LB4633;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -353,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E392D06D1E1BE5C85DBF0A7 /* Pods-TheNetwork_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = FA96LB4633;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

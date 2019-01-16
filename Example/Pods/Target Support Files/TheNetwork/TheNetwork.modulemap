@@ -1,0 +1,6 @@
+framework module TheNetwork {
+  umbrella header "TheNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

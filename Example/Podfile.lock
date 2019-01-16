@@ -1,0 +1,16 @@
+PODS:
+  - TheNetwork (0.1.0)
+
+DEPENDENCIES:
+  - TheNetwork (from `../`)
+
+EXTERNAL SOURCES:
+  TheNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TheNetwork: a1e1bbdfc7a32e72f706ba32f22b20333dcc2aed
+
+PODFILE CHECKSUM: 643610db37fde75a8c8d9c228a58458cb81232f8
+
+COCOAPODS: 1.5.3
