@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TheNetwork'
-  s.version          = '0.8.0'
+  s.version          = '0.8.1'
   s.summary          = '对网络层进行隔离，保持对业务层网络请求行为一致。'
 
 # This description is used to generate tags and improve search results.
