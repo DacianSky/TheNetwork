@@ -88,7 +88,7 @@ NSInteger const kRequestInterval = 10;
 {
     BOOL isLocal = NO;
     if (handle.forceUseLocalData) {
-        NSMutableDictionary *response = [ThemeAppJson(@"request")[@"Succeed"] mutableCopy];
+        NSMutableDictionary *response = [themeAppJson(@"request")[@"Succeed"] mutableCopy];
         id data = handle.localData();
         if (response) {
             response[@"Body"] = data;

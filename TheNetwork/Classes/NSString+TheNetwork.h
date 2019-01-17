@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define ThemeAppJson(filename) [NSString jsonWithAppFileName:(filename) andThemeName:@"theme"]
+id themeAppJson(NSString *fileName);
 
 @interface NSString (TheNetworkt)
 

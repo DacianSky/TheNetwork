@@ -8,6 +8,11 @@
 
 #import "NSString+TheNetwork.h"
 
+id themeAppJson(NSString *fileName)
+{
+    return [NSString jsonWithAppFileName:fileName andThemeName:@"theme"];
+}
+
 @implementation NSString (TheNetworkt)
 
 + (BOOL)isEmptyOrNull: (NSString *)string
