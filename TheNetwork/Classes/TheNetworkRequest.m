@@ -37,6 +37,7 @@
     model.forceUseLocalData = self.forceUseLocalData;
     model.localData = self.localData;
     model.processing = self.processing;
+    model.validate = self.validate;
     model.success = self.success;
     model.exception = self.exception;
     model.failure = self.failure;

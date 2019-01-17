@@ -146,6 +146,12 @@ NSInteger const kRequestInterval = 10;
         responseObject = [self validResponseData:responseObject];
     }
     
+    responseObject = !handle.validate?responseObject:handle.validate(responseObject);
+    if (!responseObject) {
+        !handle.finally?:handle.finally();
+        return;
+    }
+    
     [self.networkCachePool writeCache:handle.bean response:responseObject];
     [self dealHandle:handle withResponse:responseObject];
 }
