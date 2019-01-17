@@ -1,5 +1,5 @@
 use_frameworks!
-target 'TheNetwork_Tests' do
+target 'TheNetworkDemo' do
   pod 'TheNetwork', :path => '../'
   
   

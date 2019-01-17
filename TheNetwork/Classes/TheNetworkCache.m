@@ -8,7 +8,7 @@
 
 #import "TheNetworkCache.h"
 #import "TheCacheData.h"
-#import "NSString+Net.h"
+#import "NSString+TheNetwork.h"
 
 @interface TheNetworkCache()
 
