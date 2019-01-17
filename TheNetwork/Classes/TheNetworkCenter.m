@@ -2,7 +2,7 @@
 //  TheNetworkCenter.m
 //  TheNetwork
 //
-//  Created by DacianSky on 6/20/16.
+//  Created by TheMe on 6/20/16.
 //  Copyright © 2016 sdqvsqiu@gmail.com. All rights reserved.
 //
 
@@ -88,7 +88,7 @@ NSInteger const kRequestInterval = 10;
 {
     BOOL isLocal = NO;
     if (handle.forceUseLocalData) {
-        NSMutableDictionary *response = [themeAppJson(@"request")[@"Succeed"] mutableCopy];
+        NSMutableDictionary *response = [themeNetworkJson(@"request")[@"Succeed"] mutableCopy];
         id data = handle.localData();
         if (response) {
             response[@"Body"] = data;
@@ -123,12 +123,10 @@ NSInteger const kRequestInterval = 10;
         !handle.finally?:handle.finally();
         return;
     }
-    /*
-    if (DEBUG) {
-        NSString *log = [[NSString alloc] initWithData:error.userInfo[@"com.alamofire.serialization.response.error.data"] encoding:NSUTF8StringEncoding];
-        NSLog(@"%@",log);
-    }
-     */
+#ifdef DEBUG
+    NSString *log = [[NSString alloc] initWithData:error.userInfo[@"com.alamofire.serialization.response.error.data"] encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",log);
+#endif
     !handle.failure?:handle.failure(error);
     !handle.finally?:handle.finally();
 }
