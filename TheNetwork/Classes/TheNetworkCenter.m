@@ -119,7 +119,7 @@ NSInteger const kRequestInterval = 10;
         [self.network didSendRequest];
     }
     
-    if (handle.cancel()) {
+    if (handle.abandon()) {
         !handle.finally?:handle.finally();
         return;
     }
@@ -137,7 +137,7 @@ NSInteger const kRequestInterval = 10;
         [self.network didSendRequest];
     }
     
-    if (handle.cancel()) {
+    if (handle.abandon()) {
         !handle.finally?:handle.finally();
         return;
     }

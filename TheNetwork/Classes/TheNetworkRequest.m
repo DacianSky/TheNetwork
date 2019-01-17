@@ -32,7 +32,7 @@
 {
     TheNetworkRequest *model = [[[self class] alloc] init];
     model.bean = self.bean;
-    model.cancel = self.cancel;
+    model.abandon = self.abandon;
     model.start = self.start;
     model.forceUseLocalData = self.forceUseLocalData;
     model.localData = self.localData;
@@ -49,14 +49,14 @@
     return model;
 }
 
-- (RequestCancel)cancel
+- (RequestAbandon)abandon
 {
-    if (!_cancel) {
+    if (!_abandon) {
         return ^BOOL (){
             return NO;
         };
     }
-    return _cancel;
+    return _abandon;
 }
 
 - (Class<TheResponseBeanProtocol>)responseBeanType

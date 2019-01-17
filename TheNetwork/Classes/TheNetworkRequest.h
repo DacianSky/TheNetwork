@@ -10,7 +10,7 @@
 #import "TheBeanInterface.h"
 #import "TheResponseBeanProtocol.h"
 
-typedef BOOL (^ RequestCancel)(void);
+typedef BOOL (^ RequestAbandon)(void);
 typedef void (^ RequestStart)(void);
 typedef id (^ RequestLocalData)(void);
 typedef void (^ RequestProcessing)(NSProgress * progress);
@@ -28,12 +28,12 @@ typedef NSDictionary *(^ RequestIntent)(void);
 // 响应结果模型类，不配置的话默认所有ResultCode都为ResultCodeSucceed
 @property (nonatomic,strong) Class<TheResponseBeanProtocol> responseBeanType;
 
-@property (nonatomic,copy) RequestCancel cancel;
+@property (nonatomic,copy) RequestAbandon abandon; // 当返回NO时请求数据结果将被弃用
 @property (nonatomic,copy) RequestStart start;
 @property (nonatomic) BOOL forceUseLocalData;
 @property (nonatomic,copy) RequestLocalData localData;
 @property (nonatomic,copy) RequestProcessing processing;
-@property (nonatomic,copy) RequestValidate validate;
+@property (nonatomic,copy) RequestValidate validate;    // 校验请求数据，当返回值为nil时将弃用数据
 @property (nonatomic,copy) RequestSuccess success;
 @property (nonatomic,copy) RequestSuccess exception;
 @property (nonatomic,copy) RequestFailure failure;
