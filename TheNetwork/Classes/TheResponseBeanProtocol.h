@@ -24,11 +24,12 @@ typedef NS_ENUM(NSInteger,ResultCode){
 
 @protocol TheResponseBeanProtocol <NSObject>
 
-@property (nonatomic, strong) NSString * msg;
-@property (nonatomic) ResultCode resultCode;
-
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)toDictionary;
+
+
+@optional
+- (ResultCode)resultCode;
 
 @end
 

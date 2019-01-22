@@ -45,6 +45,7 @@
     model.unauthorized = self.unauthorized;
     model.willLogin = self.willLogin;
     model.onLogin = self.onLogin;
+    model.responseBeanType = self.responseBeanType;
     
     return model;
 }

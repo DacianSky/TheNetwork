@@ -164,11 +164,16 @@ NSInteger const kRequestInterval = 10;
         }else{
             // 响应结果模型类，不配置的话默认所有ResultCode都为ResultCodeSucceed
             id<TheResponseBeanProtocol> responseBean = [[(Class)handle.responseBeanType alloc] initWithDictionary:response];
-            if (responseBean.resultCode == ResultCodeSucceed) {
+            ResultCode resultCode = ResultCodeSucceed;
+            if ([responseBean respondsToSelector:@selector(resultCode)]) {
+                resultCode = [responseBean resultCode];
+            }
+            if (resultCode == ResultCodeSucceed) {
                 !handle.success?:handle.success(response);
-            }else if(responseBean.resultCode == ResultCodeVersionDisable){;
-                NSLog(@"------------->警告:%@",responseBean.msg);
             }else{
+                if(resultCode == ResultCodeVersionDisable){
+                    NSLog(@"The-------------Me>警告:该版本Api服务器已禁用");
+                }
                 !handle.exception?:handle.exception(response);
             }
         }
