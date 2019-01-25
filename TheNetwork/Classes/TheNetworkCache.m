@@ -9,6 +9,7 @@
 #import "TheNetworkCache.h"
 #import "TheCacheData.h"
 #import "NSString+TheNetwork.h"
+#import <SystemConfiguration/SystemConfiguration.h>
 
 @interface TheNetworkCache()
 
@@ -168,23 +169,26 @@
 
 #pragma mark -
 
-#define kAppleUrlTocheckWifi @"http://captive.apple.com"
 //检测网络是否可以使用
 + (BOOL)requestBeforeJudgeConnect
 {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:kAppleUrlTocheckWifi] cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:3];
-    
-    NSURLResponse *response = nil;
-    NSError *error = nil;
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    
-    NSString* result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    if ([result containsString:@"Success"])
-    {
-        return YES;
-    }else {
+    struct sockaddr zeroAddress;
+    bzero(&zeroAddress, sizeof(zeroAddress));
+    zeroAddress.sa_len = sizeof(zeroAddress);
+    zeroAddress.sa_family = AF_INET;
+    SCNetworkReachabilityRef defaultRouteReachability = SCNetworkReachabilityCreateWithAddress(NULL, (struct sockaddr *)&zeroAddress);
+    SCNetworkReachabilityFlags flags;
+    BOOL didRetrieveFlags = SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags);
+    CFRelease(defaultRouteReachability);
+    if (!didRetrieveFlags) {
+        printf("Error. Count not recover network reachability flags\n");
         return NO;
     }
+    BOOL isReachable = flags & kSCNetworkFlagsReachable;
+    BOOL needsConnection = flags & kSCNetworkFlagsConnectionRequired;
+    BOOL isNetworkEnable  =(isReachable && !needsConnection) ? YES : NO;
+    
+    return isNetworkEnable;
 }
 
 @end
