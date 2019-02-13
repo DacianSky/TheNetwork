@@ -15,6 +15,17 @@
 
 @implementation TheApi
 
++ (instancetype)sharedApi
+{
+    static TheApi *api;
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        api = [[self alloc] init];
+    });
+    return api;
+}
+
 - (instancetype)init
 {
     if ([super init]) {
@@ -52,8 +63,9 @@
 
 - (void)configLocalApi
 {
-    NSDictionary *apis = [self.apiMap valueForKey:@"api"];
+    self.HTTP_THE_BASE = [self configHttpURL:@{@"apiUrl":@""}];
     
+    NSDictionary *apis = [self.apiMap valueForKey:@"api"];
     unsigned int count;
     objc_property_t *properties = class_copyPropertyList([self class], &count);
     for (NSString *apiName in apis.allKeys) {

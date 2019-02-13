@@ -18,6 +18,8 @@ typedef NS_ENUM(NSUInteger,ThouApiContext)
 
 @interface TheApi : NSObject
 
++ (instancetype)sharedApi;
+
 #pragma mark -  action
 @property (nonatomic,strong) NSString *apiMap;
 
@@ -41,6 +43,7 @@ typedef NS_ENUM(NSUInteger,ThouApiContext)
 
 #pragma mark -  overpoint
 @property (nonatomic,copy) NSString *baseApi;
+@property (nonatomic,strong) TheNetworkAPI *HTTP_THE_BASE;   // Base API
 
 - (void)configAllHttpApi;
 - (void)configNetworkApi;

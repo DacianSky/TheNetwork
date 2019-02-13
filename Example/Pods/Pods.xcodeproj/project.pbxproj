@@ -35,6 +35,8 @@
 		BCED7FE5FF6172483599A83EFDD63164 /* NSString+TheNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A3AAEF380FB4F984C547C2CF67018B /* NSString+TheNetwork.m */; };
 		BEF4295A8E904FB8F6EC829C2343CAF8 /* TheCacheData.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BEBFA6B0692E061F7C40F5F01BAC27 /* TheCacheData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C83ED38F86177F6368FA15AAE6B0FB5F /* TheApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4FFE5870BB7ADBF38726BC43785046 /* TheApi.m */; };
+		C97FAA882213E75600741FC1 /* TheRequestSimpleBean.h in Headers */ = {isa = PBXBuildFile; fileRef = C97FAA862213E75600741FC1 /* TheRequestSimpleBean.h */; };
+		C97FAA892213E75600741FC1 /* TheRequestSimpleBean.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FAA872213E75600741FC1 /* TheRequestSimpleBean.m */; };
 		D8191BC1CB58194147B5372CF425C491 /* TheNetworkCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B24C9D1C2F671F34C747DE4A6AD8C95 /* TheNetworkCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E74DB7B509949A7174FEEA22FA330F24 /* TheRequestHandleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CCB8FB1FA077C3652484A111892E0192 /* TheRequestHandleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD21CB6D7F31481FBFB6FAAB8F7E0032 /* TheNetworkCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7EEBF2B25D7886AE5B24FB5BFCD8CD /* TheNetworkCacheProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,12 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00BF5EA52EFDA4FD98EAAB920D95306A /* TheNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TheNetwork.framework; path = TheNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00BF5EA52EFDA4FD98EAAB920D95306A /* TheNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		038D8AEBA1729E4FB80370F64DC6D505 /* TheBeanInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheBeanInterface.h; path = TheNetwork/Classes/TheBeanInterface.h; sourceTree = "<group>"; };
-		047DA01BE94257BD94B2EC834368C787 /* TheNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TheNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		047DA01BE94257BD94B2EC834368C787 /* TheNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = TheNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0650A04DE08423EC9E8F153D31E67D5C /* Pods-TheNetworkDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheNetworkDemo-umbrella.h"; sourceTree = "<group>"; };
-		1293E8AA3D9E697151DB39A7EA6EA705 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		12C990CBD12DBD5F3D9D361D11D98A58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1293E8AA3D9E697151DB39A7EA6EA705 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		12C990CBD12DBD5F3D9D361D11D98A58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1720676B4B97B66866C02B23C2AC105E /* Pods-TheNetworkDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheNetworkDemo-resources.sh"; sourceTree = "<group>"; };
 		1A5B33B20AF2174C43E59935BDB3B869 /* Pods-TheNetworkDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheNetworkDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		1B24C9D1C2F671F34C747DE4A6AD8C95 /* TheNetworkCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkCenter.h; path = TheNetwork/Classes/TheNetworkCenter.h; sourceTree = "<group>"; };
@@ -79,15 +81,17 @@
 		8B7EEBF2B25D7886AE5B24FB5BFCD8CD /* TheNetworkCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkCacheProtocol.h; path = TheNetwork/Classes/TheNetworkCacheProtocol.h; sourceTree = "<group>"; };
 		8BA855BFE0188F64630967D4FC854E21 /* TheNetworkAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkAPI.m; path = TheNetwork/Classes/TheNetworkAPI.m; sourceTree = "<group>"; };
 		8C8A556B133D905800A3360152BBCDC7 /* Pods-TheNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
-		933CB5A6B90D3DA7BC70C03231C65993 /* Pods_TheNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheNetworkDemo.framework; path = "Pods-TheNetworkDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		933CB5A6B90D3DA7BC70C03231C65993 /* Pods_TheNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheNetworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A3857AF382179D49DADAB84F5CBA50 /* TheNetworkCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkCache.m; path = TheNetwork/Classes/TheNetworkCache.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D0CDAEF1CED87931A78655EA6D140AD /* TheResponseBaseBean.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheResponseBaseBean.m; path = TheNetwork/Classes/TheResponseBaseBean.m; sourceTree = "<group>"; };
 		A4E0827983BA35A4588D444434B3CB02 /* TheNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TheNetwork-umbrella.h"; sourceTree = "<group>"; };
 		A841B2483A7A354DF6ACBC978CF30B26 /* TheNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TheNetwork.modulemap; sourceTree = "<group>"; };
 		B37D0C9CEB5C72A130D1230484389F75 /* NSString+TheNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TheNetwork.h"; path = "TheNetwork/Classes/NSString+TheNetwork.h"; sourceTree = "<group>"; };
 		B61B0E3E49943E4C77F3782AE3466932 /* TheBasicRequestHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheBasicRequestHandle.m; path = TheNetwork/Classes/TheBasicRequestHandle.m; sourceTree = "<group>"; };
 		BEF435CD2D1E855362C953166FEC50B2 /* TheNetworkAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkAPI.h; path = TheNetwork/Classes/TheNetworkAPI.h; sourceTree = "<group>"; };
+		C97FAA862213E75600741FC1 /* TheRequestSimpleBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheRequestSimpleBean.h; sourceTree = "<group>"; };
+		C97FAA872213E75600741FC1 /* TheRequestSimpleBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheRequestSimpleBean.m; sourceTree = "<group>"; };
 		CB312BD7A0E9D4411A7C91E02EE8C3F8 /* TheNetworkCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkCenter.m; path = TheNetwork/Classes/TheNetworkCenter.m; sourceTree = "<group>"; };
 		CCB8FB1FA077C3652484A111892E0192 /* TheRequestHandleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheRequestHandleProtocol.h; path = TheNetwork/Classes/TheRequestHandleProtocol.h; sourceTree = "<group>"; };
 		D0FA8B2059FBC0AE513AE34D9E7421A4 /* Pods-TheNetworkDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheNetworkDemo-frameworks.sh"; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 				F69B1DE018588BAF6336530080FE5F56 /* TheNetworkRequest.m */,
 				DEF6CF51A3D95F1A0D160F2C35F5BEBC /* TheRequestBaseBean.h */,
 				572A167CA11DD1C2E41747F365A62E9E /* TheRequestBaseBean.m */,
+				C97FAA862213E75600741FC1 /* TheRequestSimpleBean.h */,
+				C97FAA872213E75600741FC1 /* TheRequestSimpleBean.m */,
 				CCB8FB1FA077C3652484A111892E0192 /* TheRequestHandleProtocol.h */,
 				ED7F8C75DF0227C15787DB4D31879102 /* TheResponseBaseBean.h */,
 				9D0CDAEF1CED87931A78655EA6D140AD /* TheResponseBaseBean.m */,
@@ -257,6 +263,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97FAA882213E75600741FC1 /* TheRequestSimpleBean.h in Headers */,
 				6B16ACCA2B48643BABFFB7786E2D095A /* Pods-TheNetworkDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6917DB57367B04268BFB382FB4B5EBA /* Pods-TheNetworkDemo-dummy.m in Sources */,
+				C97FAA892213E75600741FC1 /* TheRequestSimpleBean.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
