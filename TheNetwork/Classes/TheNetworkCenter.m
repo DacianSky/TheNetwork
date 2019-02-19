@@ -119,7 +119,7 @@ NSInteger const kRequestInterval = 10;
         [self.network didSendRequest];
     }
     
-    if (handle.abandon()) {
+    if (handle.abandon(handle.bean)) {
         !handle.finally?:handle.finally();
         return;
     }
@@ -137,7 +137,7 @@ NSInteger const kRequestInterval = 10;
         [self.network didSendRequest];
     }
     
-    if (handle.abandon()) {
+    if (handle.abandon(handle.bean)) {
         !handle.finally?:handle.finally();
         return;
     }
@@ -146,7 +146,7 @@ NSInteger const kRequestInterval = 10;
         responseObject = [self validResponseData:responseObject];
     }
     
-    responseObject = !handle.validate?responseObject:handle.validate(responseObject);
+    responseObject = !handle.validate?responseObject:handle.validate(handle.bean,responseObject);
     if (!responseObject) {
         !handle.finally?:handle.finally();
         return;

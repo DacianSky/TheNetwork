@@ -39,9 +39,18 @@
         useCacheFlag = YES;
     }
     
+    id cacheResponse = [self readCache:bean];
     if ([api.cacheType rangeOfString:NetworkCacheTypeNoCache].location != NSNotFound) {
         sendRequestFlag = YES;
         useCacheFlag = NO;
+    }else if ([api.cacheType rangeOfString:NetworkCacheTypeCacheFirst].location != NSNotFound) {
+        if (!cacheResponse) {
+            sendRequestFlag = NO;
+            useCacheFlag = YES;
+        }else{
+            sendRequestFlag = YES;
+            useCacheFlag = NO;
+        }
     }else if ([api.cacheType rangeOfString:NetworkCacheTypeCacheForever].location != NSNotFound) {
         sendRequestFlag = NO;
         useCacheFlag = YES;
@@ -51,9 +60,8 @@
     }
     
     if (useCacheFlag) {
-        id response = [self readCache:bean];
-        if (response) {
-            !callback?:callback(handle,response);
+        if (cacheResponse) {
+            !callback?:callback(handle,cacheResponse);
         }else{
             sendRequestFlag = YES; //没有数据必须网络请求
         }

@@ -11,6 +11,9 @@
 typedef NS_ENUM(NSUInteger,NetWorkRequestType){
     NetWorkRequestTypeGet,
     NetWorkRequestTypePost,
+    NetWorkRequestTypeDelete,
+    NetWorkRequestTypePut,
+    NetWorkRequestTypePostForm,
     NetWorkRequestTypeUpload
 };
 
@@ -27,6 +30,7 @@ typedef NS_ENUM(NSUInteger,NetWorkResponseType){
 extern NSString *const NetworkCacheTypeNoCache;
 extern NSString *const NetworkCacheTypeCacheDefault;
 extern NSString *const NetworkCacheTypeCacheWithParameter;
+extern NSString *const NetworkCacheTypeCacheFirst;
 extern NSString *const NetworkCacheTypeCacheForever;
 extern NSString *const NetworkCacheTypeRecall;
 

@@ -53,7 +53,7 @@
 - (RequestAbandon)abandon
 {
     if (!_abandon) {
-        return ^BOOL (){
+        return ^BOOL (id<TheBeanInterface> bean){
             return NO;
         };
     }

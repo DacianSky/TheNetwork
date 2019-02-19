@@ -10,11 +10,11 @@
 #import "TheBeanInterface.h"
 #import "TheResponseBeanProtocol.h"
 
-typedef BOOL (^ RequestAbandon)(void);
+typedef BOOL (^ RequestAbandon)(id<TheBeanInterface> bean);
 typedef void (^ RequestStart)(void);
 typedef id (^ RequestLocalData)(void);
 typedef void (^ RequestProcessing)(NSProgress * progress);
-typedef id (^ RequestValidate)(id model);
+typedef id (^ RequestValidate)(id<TheBeanInterface> bean,id model);
 typedef void (^ RequestSuccess)(id model);
 typedef void (^ RequestFailure)(NSError *error);
 typedef void (^ RequestFinally)(void);

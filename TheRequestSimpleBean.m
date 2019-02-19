@@ -16,13 +16,12 @@
 @end
 
 @implementation TheRequestSimpleBean
-
 @synthesize beanApi = _beanApi;
 
 - (TheNetworkAPI *)beanApi
 {
     if (!_beanApi) {
-        _beanApi = [TheApi sharedApi].HTTP_THE_BASE;
+        _beanApi = [[TheApi sharedApi].HTTP_THE_BASE copy];
     }
     return _beanApi;
 }
@@ -31,6 +30,12 @@
 {
     _simpleUrl = simpleUrl;
     self.beanApi.apiUrl = [self.beanApi.apiUrl stringByAppendingString:simpleUrl];
+}
+
+- (void)setFullUrl:(NSString *)fullUrl
+{
+    _fullUrl = fullUrl;
+    self.beanApi.apiUrl = fullUrl;
 }
 
 - (NSMutableDictionary *)simpleParams

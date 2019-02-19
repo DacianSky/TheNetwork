@@ -11,6 +11,7 @@
 NSString *const NetworkCacheTypeNoCache = @"NetworkCacheTypeNoCache";
 NSString *const NetworkCacheTypeCacheDefault = @"NetworkCacheTypeCacheDefault";
 NSString *const NetworkCacheTypeCacheWithParameter = @"NetworkCacheTypeCacheWithParameter";
+NSString *const NetworkCacheTypeCacheFirst = @"NetworkCacheTypeCacheFirst";
 NSString *const NetworkCacheTypeCacheForever = @"NetworkCacheTypeCacheForever";
 NSString *const NetworkCacheTypeRecall = @"NetworkCacheTypeRecall";
 

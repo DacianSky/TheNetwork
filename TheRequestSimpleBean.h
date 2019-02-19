@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TheRequestSimpleBean : TheRequestBaseBean
 
+@property (nonatomic, strong) id tag;
+
 @property (nonatomic, copy) NSString *simpleUrl;
+@property (nonatomic, copy) NSString *fullUrl;
 @property (nonatomic, strong, readonly) NSMutableDictionary *simpleParams;
 
 @end
