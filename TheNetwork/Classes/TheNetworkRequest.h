@@ -12,7 +12,7 @@
 
 typedef BOOL (^ RequestAbandon)(id<TheBeanInterface> bean);
 typedef void (^ RequestStart)(void);
-typedef id (^ RequestLocalData)(void);
+typedef id (^ RequestLocalData)(NSDictionary *response);
 typedef void (^ RequestProcessing)(NSProgress * progress);
 typedef id (^ RequestValidate)(id<TheBeanInterface> bean,id model);
 typedef void (^ RequestSuccess)(id model);
