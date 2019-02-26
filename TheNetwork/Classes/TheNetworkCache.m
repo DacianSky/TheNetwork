@@ -119,6 +119,15 @@
     
     return responseData;
 }
+
+- (id)readCacheForce:(id<TheBeanInterface>)bean
+{
+    TheNetworkAPI *api = bean.beanApi;
+    NSString *key = [self keyWithBean:bean];
+    TheCacheData *cacheData = [self readCachePool:api.cacheType key:key];
+    return cacheData.cacheData;
+}
+
 #pragma mark - 
 // 获得缓存key
 - (NSString *)keyWithBean:(id<TheBeanInterface>)bean

@@ -33,6 +33,7 @@ extern NSString *const NetworkCacheTypeCacheWithParameter;
 extern NSString *const NetworkCacheTypeCacheFirst;
 extern NSString *const NetworkCacheTypeCacheForever;
 extern NSString *const NetworkCacheTypeRecall;
+extern NSString *const NetworkCacheTypeWhenFailure;
 
 @interface TheNetworkAPI : NSObject<NSCopying>
 

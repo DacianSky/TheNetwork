@@ -128,6 +128,16 @@ NSInteger const kRequestInterval = 10;
     NSString *log = [[NSString alloc] initWithData:error.userInfo[@"com.alamofire.serialization.response.error.data"] encoding:NSUTF8StringEncoding];
     NSLog(@"%@",log);
 #endif
+    
+    id<TheBeanInterface> bean = handle.bean;
+    if ([bean.beanApi.cacheType rangeOfString:NetworkCacheTypeWhenFailure].location != NSNotFound) {
+        id responseData = [self.networkCachePool readCacheForce:bean];
+        if (responseData) {
+            [self success:responseData handle:handle];
+            return;
+        }
+    }
+    
     !handle.failure?:handle.failure(error);
     !handle.finally?:handle.finally();
 }

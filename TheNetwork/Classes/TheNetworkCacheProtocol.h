@@ -26,6 +26,7 @@ typedef void(^ RequestCacheCallback)(TheNetworkRequest *handle,NSDictionary *res
  *  @since 1.0
  */
 - (BOOL)writeCache:(id<TheBeanInterface>)bean response:(id)response;
+- (id)readCacheForce:(id<TheBeanInterface>)bean;
 - (void)clearCache;
 
 - (BOOL)willSendRequest:(TheNetworkRequest *)handle withCallback:(RequestCacheCallback)callback;

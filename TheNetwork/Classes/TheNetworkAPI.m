@@ -14,6 +14,7 @@ NSString *const NetworkCacheTypeCacheWithParameter = @"NetworkCacheTypeCacheWith
 NSString *const NetworkCacheTypeCacheFirst = @"NetworkCacheTypeCacheFirst";
 NSString *const NetworkCacheTypeCacheForever = @"NetworkCacheTypeCacheForever";
 NSString *const NetworkCacheTypeRecall = @"NetworkCacheTypeRecall";
+NSString *const NetworkCacheTypeWhenFailure = @"NetworkCacheTypeWhenFailure";
 
 
 @implementation TheNetworkAPI
