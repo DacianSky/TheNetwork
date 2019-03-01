@@ -11,7 +11,6 @@
 #import "TheResponseBeanProtocol.h"
 
 typedef BOOL (^ RequestAbandon)(id<TheBeanInterface> bean);
-typedef void (^ RequestStart)(void);
 typedef id (^ RequestLocalData)(NSDictionary *response);
 typedef void (^ RequestProcessing)(NSProgress * progress);
 typedef id (^ RequestValidate)(id<TheBeanInterface> bean,id model);
@@ -29,7 +28,7 @@ typedef NSDictionary *(^ RequestIntent)(void);
 @property (nonatomic,strong) Class<TheResponseBeanProtocol> responseBeanType;
 
 @property (nonatomic,copy) RequestAbandon abandon; // 当返回NO时请求数据结果将被弃用
-@property (nonatomic,copy) RequestStart start;
+@property (nonatomic,copy) RequestAbandon start;
 @property (nonatomic) BOOL forceUseLocalData;
 @property (nonatomic,copy) RequestLocalData localData;
 @property (nonatomic,copy) RequestProcessing processing;

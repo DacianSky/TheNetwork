@@ -71,17 +71,20 @@ NSInteger const kRequestInterval = 10;
 
 - (BOOL)prepareHandle:(TheNetworkRequest *)handle
 {
-    !handle.start?:handle.start();
+    if (!handle.start?NO:handle.start(handle.bean)) {
+        !handle.finally?:handle.finally();
+        return NO;
+    }
     
-    BOOL flag = YES;
+    BOOL donePrepareFlag = YES;
     if ([self localHandle:handle]) {
-        flag =  NO;
+        donePrepareFlag =  NO;
     }
     if ([self cacheHandle:handle]) {
-        flag = NO;
+        donePrepareFlag = NO;
     }
     
-    return flag;
+    return donePrepareFlag;
 }
 
 - (BOOL)localHandle:(TheNetworkRequest *)handle
@@ -120,7 +123,7 @@ NSInteger const kRequestInterval = 10;
         [self.network didSendRequest];
     }
     
-    if (handle.abandon(handle.bean)) {
+    if (!handle.abandon?NO:handle.abandon(handle.bean)) {
         !handle.finally?:handle.finally();
         return;
     }
@@ -148,7 +151,7 @@ NSInteger const kRequestInterval = 10;
         [self.network didSendRequest];
     }
     
-    if (handle.abandon(handle.bean)) {
+    if (!handle.abandon?NO:handle.abandon(handle.bean)) {
         !handle.finally?:handle.finally();
         return;
     }
@@ -200,6 +203,9 @@ NSInteger const kRequestInterval = 10;
 {
     NSMutableDictionary *parameter = [handle.bean.actualParams mutableCopy];
     [parameter removeObjectForKey:@"apiUrl"];
+    if (!parameter.allKeys.count) {
+        parameter = nil;
+    }
     return parameter;
 }
 
