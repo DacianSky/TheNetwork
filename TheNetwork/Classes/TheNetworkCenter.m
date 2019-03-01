@@ -71,7 +71,7 @@ NSInteger const kRequestInterval = 10;
 
 - (BOOL)prepareHandle:(TheNetworkRequest *)handle
 {
-    if (!handle.start?NO:handle.start(handle.bean)) {
+    if (!handle.start?NO:!handle.start(handle.bean)) {
         !handle.finally?:handle.finally();
         return NO;
     }
