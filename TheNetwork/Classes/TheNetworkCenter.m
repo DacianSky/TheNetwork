@@ -166,7 +166,6 @@ NSInteger const kRequestInterval = 10;
         return;
     }
     
-    [self.networkCachePool writeCache:handle.bean response:responseObject];
     [self dealHandle:handle withResponse:responseObject];
 }
 
@@ -183,6 +182,7 @@ NSInteger const kRequestInterval = 10;
                 resultCode = [responseBean resultCode];
             }
             if (resultCode == ResultCodeSucceed) {
+                [self.networkCachePool writeCache:handle.bean response:responseji];
                 !handle.success?:handle.success(response);
             }else{
                 if(resultCode == ResultCodeVersionDisable){
