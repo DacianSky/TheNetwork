@@ -34,10 +34,6 @@
     }
     
     self.connect = [[self class] requestBeforeJudgeConnect];
-    if (!self.connect) {
-        sendRequestFlag = NO; //没有数据无法请求网络
-        useCacheFlag = YES;
-    }
     
     id cacheResponse = [self readCache:bean];
     if ([api.cacheType rangeOfString:NetworkCacheTypeNoCache].location != NSNotFound) {
@@ -56,6 +52,11 @@
         useCacheFlag = YES;
     }else if([api.cacheType rangeOfString:NetworkCacheTypeRecall].location != NSNotFound){
         sendRequestFlag = YES;
+        useCacheFlag = YES;
+    }
+    
+    if (!self.connect) {
+        sendRequestFlag = NO; //没有数据无法请求网络
         useCacheFlag = YES;
     }
     
@@ -157,14 +158,18 @@
 {
     NSMutableDictionary *cachePool = [@{} mutableCopy];
     NSArray *allCacheType = [TheNetworkAPI allNetworkCacheType];
-    
     for (NSString *cacheType in allCacheType) {
-        NSCache *cache = [[NSCache alloc] init];;
-        cachePool[cacheType] = cache;
-        cache.countLimit = 50;
-//        cache.totalCostLimit = 10 * 1024 * 1024;
+        cachePool[cacheType] = [self configCache:cacheType];
     }
     self.cachePool = cachePool;
+}
+
+- (id)configCache:(NSString *)cacheType
+{
+    NSCache *cache = [[NSCache alloc] init];;
+    cache.countLimit = 50;
+//        cache.totalCostLimit = 10 * 1024 * 1024;
+    return cache;
 }
 
 - (void)clearCache
@@ -176,11 +181,21 @@
 
 - (void)writeCachePool:(NSString *)cacheType key:(NSString *)key data:(TheCacheData *)cacheData
 {
-    [self.cachePool[cacheType] setObject:cacheData forKey:key];
+    id cache = self.cachePool[cacheType];
+    if (!cache) {
+        cache = [self configCache:cacheType];
+        self.cachePool[cacheType] = cache;
+    }
+    [cache setObject:cacheData forKey:key];
 }
 
 - (TheCacheData *)readCachePool:(NSString *)cacheType key:(NSString *)key
 {
+    id cache = self.cachePool[cacheType];
+    if (!cache) {
+        cache = [self configCache:cacheType];
+        self.cachePool[cacheType] = cache;
+    }
     return [self.cachePool[cacheType] objectForKey:key];
 }
 

@@ -14,6 +14,7 @@
 #pragma mark -  overpoint
 // 自定义缓存类覆盖方法
 - (void)buildCachePool;
+- (id)configCache:(NSString *)cacheType;
 
 - (void)writeCachePool:(NSString *)cacheType key:(NSString *)key data:(id)cacheData;
 - (id)readCachePool:(NSString *)cacheType key:(NSString *)key;

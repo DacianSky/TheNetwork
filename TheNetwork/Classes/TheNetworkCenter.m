@@ -182,7 +182,7 @@ NSInteger const kRequestInterval = 10;
                 resultCode = [responseBean resultCode];
             }
             if (resultCode == ResultCodeSucceed) {
-                [self.networkCachePool writeCache:handle.bean response:responseji];
+                [self.networkCachePool writeCache:handle.bean response:response];
                 !handle.success?:handle.success(response);
             }else{
                 if(resultCode == ResultCodeVersionDisable){
