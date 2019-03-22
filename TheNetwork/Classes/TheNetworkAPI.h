@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger,NetWorkRequestType){
+typedef NS_ENUM(NSUInteger,NetWorkRequestTypeDefault){
     NetWorkRequestTypeGet,
     NetWorkRequestTypePost,
     NetWorkRequestTypeDelete,
@@ -16,14 +16,16 @@ typedef NS_ENUM(NSUInteger,NetWorkRequestType){
     NetWorkRequestTypePostForm,
     NetWorkRequestTypeUpload
 };
+typedef NSInteger NetWorkRequestType;
 
-typedef NS_ENUM(NSUInteger,NetWorkResponseType){
+typedef NS_ENUM(NSUInteger,NetWorkResponseTypeDefault){
     NetWorkResponseTypeNSDictionary,
     NetWorkResponseTypeJson,
     NetWorkResponseTypeXml,
     NetWorkResponseTypeHTTP,
     NetWorkResponseTypeRaw
 };
+typedef NSInteger NetWorkResponseType;
 
 #pragma mark - NetworkCacheType
 
