@@ -122,6 +122,9 @@ id themeNetworkJson(NSString *fileName)
 
 + (NSString *)jsonStringWithFileName:(NSString *)filename andThemeName:(NSString *)themeName
 {
+    if ([NSString isEmptyOrNull:filename]) {
+        return nil;
+    }
     if ([NSString isEmptyOrNull:themeName]) {
         themeName = kThemeName;
     }

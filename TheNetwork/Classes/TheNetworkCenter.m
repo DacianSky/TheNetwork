@@ -90,12 +90,9 @@ NSInteger const kRequestInterval = 10;
 - (BOOL)localHandle:(TheNetworkRequest *)handle
 {
     BOOL isLocal = handle.forceUseLocalData;
-#ifdef DEBUG
-    isLocal = YES;
-#endif
     if (isLocal) {
         NSMutableDictionary *response = [themeNetworkJson(@"request") mutableCopy];
-        id data = handle.localData(response);
+        id data = !handle.localData?nil:handle.localData(response);
         if (data) {
             [self success:data handle:handle];
         }else{

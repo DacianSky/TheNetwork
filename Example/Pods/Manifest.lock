@@ -1,5 +1,5 @@
 PODS:
-  - TheNetwork (0.8.1)
+  - TheNetwork (0.9.0)
 
 DEPENDENCIES:
   - TheNetwork (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TheNetwork: 3f1c470dbee6f5593c2cc123a53613cf035ffe92
+  TheNetwork: 4eeb5c635024a00492c934afc9f52ab31b82d6d2
 
 PODFILE CHECKSUM: 665a9c1c338172daf46e9ba30a36b971f348fb3c
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.2
