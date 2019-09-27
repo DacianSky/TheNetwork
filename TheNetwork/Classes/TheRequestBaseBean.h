@@ -16,5 +16,6 @@ extern NSString *const BeanTypeUnpackJsonData;
 @interface TheRequestBaseBean : NSObject <TheBeanInterface>
 
 @property(strong,nonatomic) id unpackJsonData;
+@property(copy,nonatomic) id uploadData;
 
 @end
