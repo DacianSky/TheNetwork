@@ -60,7 +60,7 @@ NSInteger const kRequestInterval = 10;
     id parameter = [self convertParameter:handle];
     
     __weak __typeof__(self) __weak_self__ = self;
-    [self.network sendRequest:model.bean.beanApi.requestType url:url parameters:parameter responseType:model.bean.beanApi.responseType progress:^(NSProgress *progress) {
+    [self.network sendRequest:model url:url parameters:parameter progress:^(NSProgress *progress) {
         !handle.processing?:handle.processing(progress);
     } success:^(id responseObject) {
         [__weak_self__ success:responseObject handle:handle];

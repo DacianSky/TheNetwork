@@ -14,8 +14,10 @@ extern NSString *const BeanTypeUnpackJsonData;
 
 @implementation TheBasicRequestHandle
 
-- (void)sendRequest:(NetWorkRequestType)requestType url:(NSString *)url parameters:(id)parameters responseType:(NetWorkResponseType)responseType progress:(ResponseProgress)progress success:(ResponseSuccess)success failure:(ResponseError)failure;
+- (void)sendRequest:(TheNetworkRequest *)request url:(NSString *)url parameters:(id)parameters progress:(ResponseProgress)progress success:(ResponseSuccess)success failure:(ResponseError)failure
 {
+    NetWorkRequestType requestType = request.bean.beanApi.requestType;
+//    NetWorkResponseType responseType = request.bean.beanApi.responseType;
     if (requestType == NetWorkRequestTypeGet) {
         [self getWithURL:url Params:parameters success:success failure:failure];
     }else if (requestType == NetWorkRequestTypePost){

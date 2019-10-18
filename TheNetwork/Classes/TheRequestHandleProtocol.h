@@ -21,7 +21,7 @@ typedef void(^ResponseError)(NSError *error);
 
 @protocol TheRequestHandleProtocol <NSObject>
 
-- (void)sendRequest:(NetWorkRequestType)requestType url:(NSString *)url parameters:(id)parameters responseType:(NetWorkResponseType)responseType progress:(ResponseProgress)progress success:(ResponseSuccess)success failure:(ResponseError)failure;
+- (void)sendRequest:(TheNetworkRequest *)request url:(NSString *)url parameters:(id)parameters progress:(ResponseProgress)progress success:(ResponseSuccess)success failure:(ResponseError)failure;
 
 @optional
 - (void)willSendRequest;
