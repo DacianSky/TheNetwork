@@ -19,6 +19,7 @@ void sendRequest(TheNetworkRequest *request);
 + (instancetype)sharedNetworkCenter;
 
 - (void)sendRequest:(TheNetworkRequest *)model;
++ (NSDictionary *)convertParameter:(TheNetworkRequest *)handle;
 
 // 具体网络发送请求类，具体方法在此处实现
 @property (nonatomic,strong) id<TheRequestHandleProtocol> network;

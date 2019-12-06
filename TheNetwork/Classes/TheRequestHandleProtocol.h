@@ -24,8 +24,8 @@ typedef void(^ResponseError)(NSError *error);
 - (void)sendRequest:(TheNetworkRequest *)request url:(NSString *)url parameters:(id)parameters progress:(ResponseProgress)progress success:(ResponseSuccess)success failure:(ResponseError)failure;
 
 @optional
-- (void)willSendRequest;
-- (void)didSendRequest;
+- (BOOL)willSendRequest:(TheNetworkRequest *)request;
+- (BOOL)didSendRequest:(TheNetworkRequest *)request;
 
 //需要加密的协议相对应的key
 @property (nonatomic) id networkSecretKey;

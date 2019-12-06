@@ -37,6 +37,7 @@ typedef NSDictionary *(^ RequestIntent)(void);
 @property (nonatomic,copy) RequestSuccess exception;
 @property (nonatomic,copy) RequestFailure failure;
 @property (nonatomic,copy) RequestFinally finally;
+@property (nonatomic,copy) RequestFinally suspend;
 @property (nonatomic,copy) RequestUnauthorized unauthorized;
 @property (nonatomic,copy) RequestUnauthorized willLogin;
 @property (nonatomic,copy) RequestIntent onLogin;

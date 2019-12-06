@@ -29,3 +29,4 @@ FOUNDATION_EXPORT const unsigned char ThouRouteVersionString[];
 #import "TheRequestHandleProtocol.h"
 #import "TheResponseBaseBean.h"
 #import "TheResponseBeanProtocol.h"
+#import "TheRequestSimpleBean.h"

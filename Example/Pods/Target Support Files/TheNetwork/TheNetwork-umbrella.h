@@ -23,6 +23,7 @@
 #import "TheNetworkRequest.h"
 #import "TheRequestBaseBean.h"
 #import "TheRequestHandleProtocol.h"
+#import "TheRequestSimpleBean.h"
 #import "TheResponseBaseBean.h"
 #import "TheResponseBeanProtocol.h"
 

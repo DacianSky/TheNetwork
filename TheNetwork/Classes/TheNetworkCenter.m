@@ -48,8 +48,8 @@ NSInteger const kRequestInterval = 10;
 
 - (void)sendRequest:(TheNetworkRequest *)model
 {
-    if ([self.network respondsToSelector:@selector(willSendRequest)]) {
-        [self.network willSendRequest];
+    if ([self.network respondsToSelector:@selector(willSendRequest:)] && ![self.network willSendRequest:model]) {
+        return;
     }
     
     TheNetworkRequest *handle = [self convertHandle:model];
@@ -57,7 +57,7 @@ NSInteger const kRequestInterval = 10;
         return;
     }
     NSString *url = handle.bean.actualParams[@"apiUrl"];
-    id parameter = [self convertParameter:handle];
+    id parameter = [self.class convertParameter:handle];
     
     __weak __typeof__(self) __weak_self__ = self;
     [self.network sendRequest:model url:url parameters:parameter progress:^(NSProgress *progress) {
@@ -116,8 +116,8 @@ NSInteger const kRequestInterval = 10;
 
 - (void)failure:(NSError *)error handle:(TheNetworkRequest *)handle
 {
-    if ([self.network respondsToSelector:@selector(didSendRequest)]) {
-        [self.network didSendRequest];
+    if ([self.network respondsToSelector:@selector(didSendRequest:)] && ![self.network didSendRequest:handle]) {
+        return;
     }
     
     if (!handle.abandon?NO:handle.abandon(handle.bean)) {
@@ -144,8 +144,8 @@ NSInteger const kRequestInterval = 10;
 
 - (void)success:(id)responseObject handle:(TheNetworkRequest *)handle
 {
-    if ([self.network respondsToSelector:@selector(didSendRequest)]) {
-        [self.network didSendRequest];
+    if ([self.network respondsToSelector:@selector(didSendRequest:)] && ![self.network didSendRequest:handle]) {
+        return;
     }
     
     if (!handle.abandon?NO:handle.abandon(handle.bean)) {
@@ -196,7 +196,7 @@ NSInteger const kRequestInterval = 10;
 }
 
 #pragma mark - util
-- (NSDictionary *)convertParameter:(TheNetworkRequest *)handle
++ (NSDictionary *)convertParameter:(TheNetworkRequest *)handle
 {
     NSMutableDictionary *parameter = [handle.bean.actualParams mutableCopy];
     [parameter removeObjectForKey:@"apiUrl"];

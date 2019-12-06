@@ -1,5 +1,5 @@
 PODS:
-  - TheNetwork (0.9.0)
+  - TheNetwork (0.9.1)
 
 DEPENDENCIES:
   - TheNetwork (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TheNetwork: 4eeb5c635024a00492c934afc9f52ab31b82d6d2
+  TheNetwork: 077304a37b7ce4d7419d7d5803876f8b44345061
 
 PODFILE CHECKSUM: 665a9c1c338172daf46e9ba30a36b971f348fb3c
 

@@ -42,6 +42,7 @@
     model.exception = self.exception;
     model.failure = self.failure;
     model.finally = self.finally;
+    model.suspend = self.suspend;
     model.unauthorized = self.unauthorized;
     model.willLogin = self.willLogin;
     model.onLogin = self.onLogin;
