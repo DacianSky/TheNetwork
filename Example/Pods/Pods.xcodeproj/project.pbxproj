@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00FB3015BF70D1B50889782245BC8A6C /* NSString+TheNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6C0245614D6F6CCE9EF7410B1FB04E /* NSString+TheNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0597DE0AE7DBC098099244F1EBEB9894 /* Pods-TheNetworkDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5207DBC33A53DCB7E09F3E02E271F /* Pods-TheNetworkDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0660205BAC1FC74067B904A9C7979C39 /* TheNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AEEF4B7BEDE7A857D629FE88FA6F4 /* TheNetworkRequest.m */; };
-		081B879A1F3777006E7025956DC6ABE8 /* TheNetworkCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8183E1BD7589B58506044BD4BEADB3 /* TheNetworkCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13AF7C8F95117FF517CDA2FDD7848B08 /* TheRequestBaseBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 8357F3B0189D3C0EF0A4D277EDF029B1 /* TheRequestBaseBean.m */; };
-		1A9907632694D5D4302AA12B5CD08258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1F5C5B73183A3E45DC8705DAD342ABD0 /* TheNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E3288980A1C2B419C3154D1C08951 /* TheNetwork-dummy.m */; };
-		256A6512B136364214AC66EB00024D1E /* TheNetworkCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EB353B528D4931345876E8621C602930 /* TheNetworkCacheProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2650D8652DAC4A2C53F8D62269DD74CE /* TheNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5740E8432DAFFEBBF77EA5D98C562584 /* TheNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		267C658D432F930480EBA2ADFD488C65 /* TheBasicRequestHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 939086307581D7F28BD0BF3ED73753E7 /* TheBasicRequestHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41D19F708D7637BF55AD551CE8DC9AE9 /* TheNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B7103EAA7F9CE9334856BEA14BB15E37 /* TheNetworkRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42B5B7FDD62713CACF4098D0FB556FBC /* TheRequestHandleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EBBA3C54B7054247920353B367DA366D /* TheRequestHandleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51EF43EF4B5396DA396C265CB01AE767 /* TheResponseBaseBean.h in Headers */ = {isa = PBXBuildFile; fileRef = C12A83D270C641B6D51F6123AE0490AD /* TheResponseBaseBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6524575D48AE2CDC2C4C7F860784EFCE /* TheNetworkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3664FB8050BCF8CF4648A8741579A083 /* TheNetworkAPI.m */; };
-		6A28FD703ED8D0527722F582483F2A8A /* TheNetworkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB555DB9D2589A34FA62E5433C3E8C4 /* TheNetworkCenter.m */; };
-		76C6B887C7C20BE0D2F40191CC44610E /* TheRequestSimpleBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 1084DEB3DBBD702778A321157FCBCA44 /* TheRequestSimpleBean.m */; };
-		7C0178C2DC0415A269403EDC4E9258BE /* TheResponseBaseBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25EA2BECD2C3DED24CF7305007DC63 /* TheResponseBaseBean.m */; };
-		7DFBD127B32BAE87EF48F5D822BAA1AB /* TheNetworkCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = A7095AC13B30F15FCA510027EE100B17 /* TheNetworkCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		827EB269C1A683B240E1D45299BC1E83 /* NSString+TheNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 682ACD7AA9A26CF2D0FCEC9738F2AF55 /* NSString+TheNetwork.m */; };
-		8EC841B36B752F40581CD59D9EE13491 /* TheNetworkAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = EB9AC706BDBCB939E2969F7E76301624 /* TheNetworkAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A81A8B3261DEACA841319FDACD81F12F /* TheCacheData.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FDCE0A30FC777E8463E5FD32D0E0CE /* TheCacheData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABEC5FB72CCA0F94947943ACC869AAAF /* TheBeanInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDC6C55FBAC64037C826367448672DA /* TheBeanInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC814F3BB2DE4EB7929C4B6B3A8C00B7 /* TheRequestSimpleBean.h in Headers */ = {isa = PBXBuildFile; fileRef = D16B2DC3EA59F4FD024DCB41E6CADF71 /* TheRequestSimpleBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B192505A0FF882814E7F8D1941E6608E /* Pods-TheNetworkDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9038A3418A087E95CBC112D64C2F69 /* Pods-TheNetworkDemo-dummy.m */; };
-		B3A766832DF8528E3FF36C2B02D2928C /* TheCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF5C5FE498D9C52E6C3734ED8120F25 /* TheCacheData.m */; };
-		C558BC72892BFD5DF92305C1E1EE8D9E /* TheBasicRequestHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EF034C2BB6BBA016699A7132DDE8D /* TheBasicRequestHandle.m */; };
-		CEC5EFD1F308C5E7DAC0E84C10150E14 /* TheApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 867008EE48951EC6D798E1713C05A193 /* TheApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E399C6E406BC40926828A210616C3ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		EA2B22D690131DBD13DDDE1CB9F115C0 /* TheNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A0C3A82F006C5559880127DE2DD3C8 /* TheNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EBE4E178C84753E0B4B7B9B6EBA0DD3B /* TheResponseBeanProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 59436E8B9F188A49FCB923896E3B175F /* TheResponseBeanProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE6D17D18EFDC0FC11F6458CE87B147A /* TheApi.m in Sources */ = {isa = PBXBuildFile; fileRef = AC64C0BCC0746F71D7CD2CB1B968E347 /* TheApi.m */; };
-		F377B048195B192FA7E4EE745A317AB1 /* TheRequestBaseBean.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DE93ECBC60A558750A4E3ABE6189EF /* TheRequestBaseBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFCF5034632E7544E55AB7C6763D6294 /* TheNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D644D4B7673568FE87651DB729E3D4 /* TheNetworkCache.m */; };
+		00FB3015BF70D1B50889782245BC8A6C /* NSString+TheNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA598472949B1790165A33F0064BD94 /* NSString+TheNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0660205BAC1FC74067B904A9C7979C39 /* TheNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C2F34167D5BBB3007E4061BED7984C /* TheNetworkRequest.m */; };
+		081B879A1F3777006E7025956DC6ABE8 /* TheNetworkCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E7AB5917DAC83D011B407C6CE103AE /* TheNetworkCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13AF7C8F95117FF517CDA2FDD7848B08 /* TheRequestBaseBean.m in Sources */ = {isa = PBXBuildFile; fileRef = D394E0AB1C79091CEC2121129F1C7E6B /* TheRequestBaseBean.m */; };
+		1F5C5B73183A3E45DC8705DAD342ABD0 /* TheNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5606B18B3DBEAF491FCA17F799FA9665 /* TheNetwork-dummy.m */; };
+		256A6512B136364214AC66EB00024D1E /* TheNetworkCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C5A7BE8F5F325B8D15DC4C4CDFD21B41 /* TheNetworkCacheProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2650D8652DAC4A2C53F8D62269DD74CE /* TheNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC4A1BE4BB6DDF6DEC6005D1E672D461 /* TheNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		267C658D432F930480EBA2ADFD488C65 /* TheBasicRequestHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 39745FC16AFA849F500BF960E39DE88F /* TheBasicRequestHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41D19F708D7637BF55AD551CE8DC9AE9 /* TheNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E43AEF958292E2A3B2B3130A59BD2681 /* TheNetworkRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42B5B7FDD62713CACF4098D0FB556FBC /* TheRequestHandleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 147225F1313A8111A8FA59331C584551 /* TheRequestHandleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51EF43EF4B5396DA396C265CB01AE767 /* TheResponseBaseBean.h in Headers */ = {isa = PBXBuildFile; fileRef = E782F42E131BD4727974D9B1502E3559 /* TheResponseBaseBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63BD878067EFFA7B0DCDD8E2DEDE9855 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6524575D48AE2CDC2C4C7F860784EFCE /* TheNetworkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4160ECBF6CAC31C35F7B2E90D2FDEC /* TheNetworkAPI.m */; };
+		6A28FD703ED8D0527722F582483F2A8A /* TheNetworkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0FE7C910D2B9291BE30A4183D432D /* TheNetworkCenter.m */; };
+		76C6B887C7C20BE0D2F40191CC44610E /* TheRequestSimpleBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B0989F851800BA6A87259A54387B339C /* TheRequestSimpleBean.m */; };
+		7C0178C2DC0415A269403EDC4E9258BE /* TheResponseBaseBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 11581EB5BB5C93319E5175223C707C5C /* TheResponseBaseBean.m */; };
+		7DFBD127B32BAE87EF48F5D822BAA1AB /* TheNetworkCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = E48A16441BA49F4FDA84D09456F770D9 /* TheNetworkCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		827EB269C1A683B240E1D45299BC1E83 /* NSString+TheNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2360D754B9BE308BD750A21ECC743F /* NSString+TheNetwork.m */; };
+		8A1E39ED5450367B7199AF224CC83D48 /* Pods-TheNetworkDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5207DBC33A53DCB7E09F3E02E271F /* Pods-TheNetworkDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC841B36B752F40581CD59D9EE13491 /* TheNetworkAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CCA7C5019BEE41023343CA75562922D /* TheNetworkAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A81A8B3261DEACA841319FDACD81F12F /* TheCacheData.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3AC03204784FE3E0AF5E0AA309BCBA /* TheCacheData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABEC5FB72CCA0F94947943ACC869AAAF /* TheBeanInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 7290C6CEC180259A8821DD3C6A7234F3 /* TheBeanInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC814F3BB2DE4EB7929C4B6B3A8C00B7 /* TheRequestSimpleBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 893A55BABF7E79C32429048E36A3E6A6 /* TheRequestSimpleBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0C56E542A75AB8EC08B341AD91076DA /* Pods-TheNetworkDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9038A3418A087E95CBC112D64C2F69 /* Pods-TheNetworkDemo-dummy.m */; };
+		B3A766832DF8528E3FF36C2B02D2928C /* TheCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF1FCB44CE17737AB46F1C0925F546 /* TheCacheData.m */; };
+		C558BC72892BFD5DF92305C1E1EE8D9E /* TheBasicRequestHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 205EAC242212EF5751711108628E1DA6 /* TheBasicRequestHandle.m */; };
+		CEC5EFD1F308C5E7DAC0E84C10150E14 /* TheApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA060C57F5610FF4C087A66A2CB2091 /* TheApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2671F2DC041840C8AD19D245194A923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EA2B22D690131DBD13DDDE1CB9F115C0 /* TheNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = DDED047D10F0B5A77FBF2B86F829C9A8 /* TheNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE4E178C84753E0B4B7B9B6EBA0DD3B /* TheResponseBeanProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F6E2C06EAE2469F67A0B447DFB1254 /* TheResponseBeanProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE6D17D18EFDC0FC11F6458CE87B147A /* TheApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DB816D3DA914A1F345A88A21104E50 /* TheApi.m */; };
+		F377B048195B192FA7E4EE745A317AB1 /* TheRequestBaseBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 846103FC55C90067C4D49DB9BF396BF7 /* TheRequestBaseBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFCF5034632E7544E55AB7C6763D6294 /* TheNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC8866CBDA0F90091016221D4DDDED /* TheNetworkCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AB90B55EF3D808EACAB7E2B7202D99E0 /* PBXContainerItemProxy */ = {
+		3845F9B3CEA6CB012E82FE90FABCEE74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -53,55 +53,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1084DEB3DBBD702778A321157FCBCA44 /* TheRequestSimpleBean.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheRequestSimpleBean.m; path = TheNetwork/Classes/TheRequestSimpleBean.m; sourceTree = "<group>"; };
+		02F6E2C06EAE2469F67A0B447DFB1254 /* TheResponseBeanProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheResponseBeanProtocol.h; path = TheNetwork/Classes/TheResponseBeanProtocol.h; sourceTree = "<group>"; };
+		08177F65F985AB36FA6D13E02B02EDD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0A4160ECBF6CAC31C35F7B2E90D2FDEC /* TheNetworkAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkAPI.m; path = TheNetwork/Classes/TheNetworkAPI.m; sourceTree = "<group>"; };
+		0BA060C57F5610FF4C087A66A2CB2091 /* TheApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheApi.h; path = TheNetwork/Classes/TheApi.h; sourceTree = "<group>"; };
 		10DE6512C85283DCC6652A815EF60AF8 /* Pods-TheNetworkDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TheNetworkDemo.modulemap"; sourceTree = "<group>"; };
-		158AEEF4B7BEDE7A857D629FE88FA6F4 /* TheNetworkRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkRequest.m; path = TheNetwork/Classes/TheNetworkRequest.m; sourceTree = "<group>"; };
-		1C8183E1BD7589B58506044BD4BEADB3 /* TheNetworkCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkCache.h; path = TheNetwork/Classes/TheNetworkCache.h; sourceTree = "<group>"; };
+		11581EB5BB5C93319E5175223C707C5C /* TheResponseBaseBean.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheResponseBaseBean.m; path = TheNetwork/Classes/TheResponseBaseBean.m; sourceTree = "<group>"; };
+		147225F1313A8111A8FA59331C584551 /* TheRequestHandleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheRequestHandleProtocol.h; path = TheNetwork/Classes/TheRequestHandleProtocol.h; sourceTree = "<group>"; };
 		1D5A61C0BB88D3334C769BA7D81C6F31 /* Pods-TheNetworkDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheNetworkDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		1FDC6C55FBAC64037C826367448672DA /* TheBeanInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheBeanInterface.h; path = TheNetwork/Classes/TheBeanInterface.h; sourceTree = "<group>"; };
+		1DA598472949B1790165A33F0064BD94 /* NSString+TheNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TheNetwork.h"; path = "TheNetwork/Classes/NSString+TheNetwork.h"; sourceTree = "<group>"; };
+		205EAC242212EF5751711108628E1DA6 /* TheBasicRequestHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheBasicRequestHandle.m; path = TheNetwork/Classes/TheBasicRequestHandle.m; sourceTree = "<group>"; };
+		22B68800483A1188D5939F8FB3C34062 /* TheNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TheNetwork.modulemap; sourceTree = "<group>"; };
 		2565E971346EBA41CF0886524B5FFD78 /* Pods-TheNetworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheNetworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		2842067B65A517B3F55C4EDC3BB3F7C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		289C9908B91B5E6E1701D739F6607CA8 /* TheNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TheNetwork-prefix.pch"; sourceTree = "<group>"; };
-		2AB555DB9D2589A34FA62E5433C3E8C4 /* TheNetworkCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkCenter.m; path = TheNetwork/Classes/TheNetworkCenter.m; sourceTree = "<group>"; };
-		2F25EA2BECD2C3DED24CF7305007DC63 /* TheResponseBaseBean.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheResponseBaseBean.m; path = TheNetwork/Classes/TheResponseBaseBean.m; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3664FB8050BCF8CF4648A8741579A083 /* TheNetworkAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkAPI.m; path = TheNetwork/Classes/TheNetworkAPI.m; sourceTree = "<group>"; };
-		3F157A22FF97350C01CEE4BDC133BAF9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4B2E3288980A1C2B419C3154D1C08951 /* TheNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TheNetwork-dummy.m"; sourceTree = "<group>"; };
-		5740E8432DAFFEBBF77EA5D98C562584 /* TheNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TheNetwork-umbrella.h"; sourceTree = "<group>"; };
-		59436E8B9F188A49FCB923896E3B175F /* TheResponseBeanProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheResponseBeanProtocol.h; path = TheNetwork/Classes/TheResponseBeanProtocol.h; sourceTree = "<group>"; };
-		5E6C0245614D6F6CCE9EF7410B1FB04E /* NSString+TheNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TheNetwork.h"; path = "TheNetwork/Classes/NSString+TheNetwork.h"; sourceTree = "<group>"; };
-		682ACD7AA9A26CF2D0FCEC9738F2AF55 /* NSString+TheNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TheNetwork.m"; path = "TheNetwork/Classes/NSString+TheNetwork.m"; sourceTree = "<group>"; };
-		69D644D4B7673568FE87651DB729E3D4 /* TheNetworkCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkCache.m; path = TheNetwork/Classes/TheNetworkCache.m; sourceTree = "<group>"; };
-		72A0C3A82F006C5559880127DE2DD3C8 /* TheNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetwork.h; path = TheNetwork/Classes/TheNetwork.h; sourceTree = "<group>"; };
+		336640C4ABABB1B015E146A4C0FEB3D3 /* TheNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TheNetwork-Info.plist"; sourceTree = "<group>"; };
+		33E7AB5917DAC83D011B407C6CE103AE /* TheNetworkCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkCache.h; path = TheNetwork/Classes/TheNetworkCache.h; sourceTree = "<group>"; };
+		39745FC16AFA849F500BF960E39DE88F /* TheBasicRequestHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheBasicRequestHandle.h; path = TheNetwork/Classes/TheBasicRequestHandle.h; sourceTree = "<group>"; };
+		43DB816D3DA914A1F345A88A21104E50 /* TheApi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheApi.m; path = TheNetwork/Classes/TheApi.m; sourceTree = "<group>"; };
+		5606B18B3DBEAF491FCA17F799FA9665 /* TheNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TheNetwork-dummy.m"; sourceTree = "<group>"; };
+		57C2F34167D5BBB3007E4061BED7984C /* TheNetworkRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkRequest.m; path = TheNetwork/Classes/TheNetworkRequest.m; sourceTree = "<group>"; };
+		5DBDAFC661F263664BC448314135A75A /* TheNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TheNetwork-prefix.pch"; sourceTree = "<group>"; };
+		5E2360D754B9BE308BD750A21ECC743F /* NSString+TheNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TheNetwork.m"; path = "TheNetwork/Classes/NSString+TheNetwork.m"; sourceTree = "<group>"; };
+		6CCA7C5019BEE41023343CA75562922D /* TheNetworkAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkAPI.h; path = TheNetwork/Classes/TheNetworkAPI.h; sourceTree = "<group>"; };
+		7290C6CEC180259A8821DD3C6A7234F3 /* TheBeanInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheBeanInterface.h; path = TheNetwork/Classes/TheBeanInterface.h; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		739C9A2E6D9B69C30B7FD1BA941F0EAE /* TheNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TheNetwork.framework; path = TheNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75F7C36F2D41718E73485A4F5DE2674A /* TheNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TheNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7ABC079AB65C38CBE922876D1999B762 /* Pods_TheNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheNetworkDemo.framework; path = "Pods-TheNetworkDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8357F3B0189D3C0EF0A4D277EDF029B1 /* TheRequestBaseBean.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheRequestBaseBean.m; path = TheNetwork/Classes/TheRequestBaseBean.m; sourceTree = "<group>"; };
-		867008EE48951EC6D798E1713C05A193 /* TheApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheApi.h; path = TheNetwork/Classes/TheApi.h; sourceTree = "<group>"; };
+		8033968A1BB221A4A8CC2DEABAFE69F6 /* TheNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TheNetwork.debug.xcconfig; sourceTree = "<group>"; };
+		846103FC55C90067C4D49DB9BF396BF7 /* TheRequestBaseBean.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheRequestBaseBean.h; path = TheNetwork/Classes/TheRequestBaseBean.h; sourceTree = "<group>"; };
+		88B0FE7C910D2B9291BE30A4183D432D /* TheNetworkCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkCenter.m; path = TheNetwork/Classes/TheNetworkCenter.m; sourceTree = "<group>"; };
+		893A55BABF7E79C32429048E36A3E6A6 /* TheRequestSimpleBean.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheRequestSimpleBean.h; path = TheNetwork/Classes/TheRequestSimpleBean.h; sourceTree = "<group>"; };
 		8BC5207DBC33A53DCB7E09F3E02E271F /* Pods-TheNetworkDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheNetworkDemo-umbrella.h"; sourceTree = "<group>"; };
-		936EF034C2BB6BBA016699A7132DDE8D /* TheBasicRequestHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheBasicRequestHandle.m; path = TheNetwork/Classes/TheBasicRequestHandle.m; sourceTree = "<group>"; };
-		939086307581D7F28BD0BF3ED73753E7 /* TheBasicRequestHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheBasicRequestHandle.h; path = TheNetwork/Classes/TheBasicRequestHandle.h; sourceTree = "<group>"; };
+		9C5FB19BD7111BB3CEAD12CC580C84DA /* TheNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TheNetwork.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7095AC13B30F15FCA510027EE100B17 /* TheNetworkCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkCenter.h; path = TheNetwork/Classes/TheNetworkCenter.h; sourceTree = "<group>"; };
-		AC64C0BCC0746F71D7CD2CB1B968E347 /* TheApi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheApi.m; path = TheNetwork/Classes/TheApi.m; sourceTree = "<group>"; };
-		ACF5C5FE498D9C52E6C3734ED8120F25 /* TheCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheCacheData.m; path = TheNetwork/Classes/TheCacheData.m; sourceTree = "<group>"; };
-		AD19E374EBF0249BF95866954C00CAF7 /* TheNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TheNetwork-Info.plist"; sourceTree = "<group>"; };
-		B7103EAA7F9CE9334856BEA14BB15E37 /* TheNetworkRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkRequest.h; path = TheNetwork/Classes/TheNetworkRequest.h; sourceTree = "<group>"; };
-		BDA1200E34DDF7F62FBDC1EE4F914C38 /* TheNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TheNetwork.modulemap; sourceTree = "<group>"; };
-		BED9053D2E818C8F213E97BE490D2EFF /* TheNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TheNetwork.xcconfig; sourceTree = "<group>"; };
-		C12A83D270C641B6D51F6123AE0490AD /* TheResponseBaseBean.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheResponseBaseBean.h; path = TheNetwork/Classes/TheResponseBaseBean.h; sourceTree = "<group>"; };
-		C7FDCE0A30FC777E8463E5FD32D0E0CE /* TheCacheData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheCacheData.h; path = TheNetwork/Classes/TheCacheData.h; sourceTree = "<group>"; };
-		D16B2DC3EA59F4FD024DCB41E6CADF71 /* TheRequestSimpleBean.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheRequestSimpleBean.h; path = TheNetwork/Classes/TheRequestSimpleBean.h; sourceTree = "<group>"; };
+		9E3AE1DFDC1A0AEF5DDF7213B06124E4 /* TheNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TheNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0989F851800BA6A87259A54387B339C /* TheRequestSimpleBean.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheRequestSimpleBean.m; path = TheNetwork/Classes/TheRequestSimpleBean.m; sourceTree = "<group>"; };
+		C3DF1FCB44CE17737AB46F1C0925F546 /* TheCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheCacheData.m; path = TheNetwork/Classes/TheCacheData.m; sourceTree = "<group>"; };
+		C5A7BE8F5F325B8D15DC4C4CDFD21B41 /* TheNetworkCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkCacheProtocol.h; path = TheNetwork/Classes/TheNetworkCacheProtocol.h; sourceTree = "<group>"; };
+		CC4A1BE4BB6DDF6DEC6005D1E672D461 /* TheNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TheNetwork-umbrella.h"; sourceTree = "<group>"; };
+		D394E0AB1C79091CEC2121129F1C7E6B /* TheRequestBaseBean.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheRequestBaseBean.m; path = TheNetwork/Classes/TheRequestBaseBean.m; sourceTree = "<group>"; };
 		D4482D74F5785A887F251682288AECEF /* Pods-TheNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DA9038A3418A087E95CBC112D64C2F69 /* Pods-TheNetworkDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheNetworkDemo-dummy.m"; sourceTree = "<group>"; };
+		DDED047D10F0B5A77FBF2B86F829C9A8 /* TheNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetwork.h; path = TheNetwork/Classes/TheNetwork.h; sourceTree = "<group>"; };
+		DEFC8866CBDA0F90091016221D4DDDED /* TheNetworkCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TheNetworkCache.m; path = TheNetwork/Classes/TheNetworkCache.m; sourceTree = "<group>"; };
 		DFA49C1B4F90F4F60394505E10CF9CDB /* Pods-TheNetworkDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheNetworkDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EB353B528D4931345876E8621C602930 /* TheNetworkCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkCacheProtocol.h; path = TheNetwork/Classes/TheNetworkCacheProtocol.h; sourceTree = "<group>"; };
-		EB9AC706BDBCB939E2969F7E76301624 /* TheNetworkAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkAPI.h; path = TheNetwork/Classes/TheNetworkAPI.h; sourceTree = "<group>"; };
-		EBBA3C54B7054247920353B367DA366D /* TheRequestHandleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheRequestHandleProtocol.h; path = TheNetwork/Classes/TheRequestHandleProtocol.h; sourceTree = "<group>"; };
+		E43AEF958292E2A3B2B3130A59BD2681 /* TheNetworkRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkRequest.h; path = TheNetwork/Classes/TheNetworkRequest.h; sourceTree = "<group>"; };
+		E48A16441BA49F4FDA84D09456F770D9 /* TheNetworkCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheNetworkCenter.h; path = TheNetwork/Classes/TheNetworkCenter.h; sourceTree = "<group>"; };
+		E782F42E131BD4727974D9B1502E3559 /* TheResponseBaseBean.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheResponseBaseBean.h; path = TheNetwork/Classes/TheResponseBaseBean.h; sourceTree = "<group>"; };
 		EF9D2F89EB0A5C39092482380158CE3B /* Pods-TheNetworkDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheNetworkDemo-Info.plist"; sourceTree = "<group>"; };
-		F6DE93ECBC60A558750A4E3ABE6189EF /* TheRequestBaseBean.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheRequestBaseBean.h; path = TheNetwork/Classes/TheRequestBaseBean.h; sourceTree = "<group>"; };
 		FB6B1893594F340E58EE203A0EB96597 /* Pods-TheNetworkDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheNetworkDemo-frameworks.sh"; sourceTree = "<group>"; };
+		FF3AC03204784FE3E0AF5E0AA309BCBA /* TheCacheData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheCacheData.h; path = TheNetwork/Classes/TheCacheData.h; sourceTree = "<group>"; };
+		FF858D88CB0EB7C0FEEEC8C82F41BCC5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,21 +110,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E399C6E406BC40926828A210616C3ED0 /* Foundation.framework in Frameworks */,
+				63BD878067EFFA7B0DCDD8E2DEDE9855 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86A46FB42434C31E23FE0DB76C844DC4 /* Frameworks */ = {
+		AE5BE922718BFA69AF7B395995E8D964 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A9907632694D5D4302AA12B5CD08258 /* Foundation.framework in Frameworks */,
+				E2671F2DC041840C8AD19D245194A923 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141177A1ACA3AD3368278FC63CC2077C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FF858D88CB0EB7C0FEEEC8C82F41BCC5 /* LICENSE */,
+				08177F65F985AB36FA6D13E02B02EDD5 /* README.md */,
+				9E3AE1DFDC1A0AEF5DDF7213B06124E4 /* TheNetwork.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		2790F704BA714864CE9266BA2775147F /* Pods-TheNetworkDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,9 +155,17 @@
 		37C48F1917C47C105FBC433B5080BF60 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				689528468C38B75F9F43455437C655B2 /* TheNetwork */,
+				C8C73FD843B6CDA439EA8007B7D9FAF5 /* TheNetwork */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		6521A6BDCD8101276E7B2664E9ADC8A5 /* Products */ = {
@@ -158,63 +177,56 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		689528468C38B75F9F43455437C655B2 /* TheNetwork */ = {
+		9A6B09537B9616CE5E3DA615469DEBA8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E6C0245614D6F6CCE9EF7410B1FB04E /* NSString+TheNetwork.h */,
-				682ACD7AA9A26CF2D0FCEC9738F2AF55 /* NSString+TheNetwork.m */,
-				867008EE48951EC6D798E1713C05A193 /* TheApi.h */,
-				AC64C0BCC0746F71D7CD2CB1B968E347 /* TheApi.m */,
-				939086307581D7F28BD0BF3ED73753E7 /* TheBasicRequestHandle.h */,
-				936EF034C2BB6BBA016699A7132DDE8D /* TheBasicRequestHandle.m */,
-				1FDC6C55FBAC64037C826367448672DA /* TheBeanInterface.h */,
-				C7FDCE0A30FC777E8463E5FD32D0E0CE /* TheCacheData.h */,
-				ACF5C5FE498D9C52E6C3734ED8120F25 /* TheCacheData.m */,
-				72A0C3A82F006C5559880127DE2DD3C8 /* TheNetwork.h */,
-				EB9AC706BDBCB939E2969F7E76301624 /* TheNetworkAPI.h */,
-				3664FB8050BCF8CF4648A8741579A083 /* TheNetworkAPI.m */,
-				1C8183E1BD7589B58506044BD4BEADB3 /* TheNetworkCache.h */,
-				69D644D4B7673568FE87651DB729E3D4 /* TheNetworkCache.m */,
-				EB353B528D4931345876E8621C602930 /* TheNetworkCacheProtocol.h */,
-				A7095AC13B30F15FCA510027EE100B17 /* TheNetworkCenter.h */,
-				2AB555DB9D2589A34FA62E5433C3E8C4 /* TheNetworkCenter.m */,
-				B7103EAA7F9CE9334856BEA14BB15E37 /* TheNetworkRequest.h */,
-				158AEEF4B7BEDE7A857D629FE88FA6F4 /* TheNetworkRequest.m */,
-				F6DE93ECBC60A558750A4E3ABE6189EF /* TheRequestBaseBean.h */,
-				8357F3B0189D3C0EF0A4D277EDF029B1 /* TheRequestBaseBean.m */,
-				EBBA3C54B7054247920353B367DA366D /* TheRequestHandleProtocol.h */,
-				D16B2DC3EA59F4FD024DCB41E6CADF71 /* TheRequestSimpleBean.h */,
-				1084DEB3DBBD702778A321157FCBCA44 /* TheRequestSimpleBean.m */,
-				C12A83D270C641B6D51F6123AE0490AD /* TheResponseBaseBean.h */,
-				2F25EA2BECD2C3DED24CF7305007DC63 /* TheResponseBaseBean.m */,
-				59436E8B9F188A49FCB923896E3B175F /* TheResponseBeanProtocol.h */,
-				DDE2CBC2395C99A0616EAB5A4A41F39F /* Pod */,
-				9083BA75C94BE65D3DCE0E907AA1F8F6 /* Support Files */,
-			);
-			name = TheNetwork;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9083BA75C94BE65D3DCE0E907AA1F8F6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BDA1200E34DDF7F62FBDC1EE4F914C38 /* TheNetwork.modulemap */,
-				BED9053D2E818C8F213E97BE490D2EFF /* TheNetwork.xcconfig */,
-				4B2E3288980A1C2B419C3154D1C08951 /* TheNetwork-dummy.m */,
-				AD19E374EBF0249BF95866954C00CAF7 /* TheNetwork-Info.plist */,
-				289C9908B91B5E6E1701D739F6607CA8 /* TheNetwork-prefix.pch */,
-				5740E8432DAFFEBBF77EA5D98C562584 /* TheNetwork-umbrella.h */,
+				22B68800483A1188D5939F8FB3C34062 /* TheNetwork.modulemap */,
+				5606B18B3DBEAF491FCA17F799FA9665 /* TheNetwork-dummy.m */,
+				336640C4ABABB1B015E146A4C0FEB3D3 /* TheNetwork-Info.plist */,
+				5DBDAFC661F263664BC448314135A75A /* TheNetwork-prefix.pch */,
+				CC4A1BE4BB6DDF6DEC6005D1E672D461 /* TheNetwork-umbrella.h */,
+				8033968A1BB221A4A8CC2DEABAFE69F6 /* TheNetwork.debug.xcconfig */,
+				9C5FB19BD7111BB3CEAD12CC580C84DA /* TheNetwork.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/TheNetwork";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		C8C73FD843B6CDA439EA8007B7D9FAF5 /* TheNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				1DA598472949B1790165A33F0064BD94 /* NSString+TheNetwork.h */,
+				5E2360D754B9BE308BD750A21ECC743F /* NSString+TheNetwork.m */,
+				0BA060C57F5610FF4C087A66A2CB2091 /* TheApi.h */,
+				43DB816D3DA914A1F345A88A21104E50 /* TheApi.m */,
+				39745FC16AFA849F500BF960E39DE88F /* TheBasicRequestHandle.h */,
+				205EAC242212EF5751711108628E1DA6 /* TheBasicRequestHandle.m */,
+				7290C6CEC180259A8821DD3C6A7234F3 /* TheBeanInterface.h */,
+				FF3AC03204784FE3E0AF5E0AA309BCBA /* TheCacheData.h */,
+				C3DF1FCB44CE17737AB46F1C0925F546 /* TheCacheData.m */,
+				DDED047D10F0B5A77FBF2B86F829C9A8 /* TheNetwork.h */,
+				6CCA7C5019BEE41023343CA75562922D /* TheNetworkAPI.h */,
+				0A4160ECBF6CAC31C35F7B2E90D2FDEC /* TheNetworkAPI.m */,
+				33E7AB5917DAC83D011B407C6CE103AE /* TheNetworkCache.h */,
+				DEFC8866CBDA0F90091016221D4DDDED /* TheNetworkCache.m */,
+				C5A7BE8F5F325B8D15DC4C4CDFD21B41 /* TheNetworkCacheProtocol.h */,
+				E48A16441BA49F4FDA84D09456F770D9 /* TheNetworkCenter.h */,
+				88B0FE7C910D2B9291BE30A4183D432D /* TheNetworkCenter.m */,
+				E43AEF958292E2A3B2B3130A59BD2681 /* TheNetworkRequest.h */,
+				57C2F34167D5BBB3007E4061BED7984C /* TheNetworkRequest.m */,
+				846103FC55C90067C4D49DB9BF396BF7 /* TheRequestBaseBean.h */,
+				D394E0AB1C79091CEC2121129F1C7E6B /* TheRequestBaseBean.m */,
+				147225F1313A8111A8FA59331C584551 /* TheRequestHandleProtocol.h */,
+				893A55BABF7E79C32429048E36A3E6A6 /* TheRequestSimpleBean.h */,
+				B0989F851800BA6A87259A54387B339C /* TheRequestSimpleBean.m */,
+				E782F42E131BD4727974D9B1502E3559 /* TheResponseBaseBean.h */,
+				11581EB5BB5C93319E5175223C707C5C /* TheResponseBaseBean.m */,
+				02F6E2C06EAE2469F67A0B447DFB1254 /* TheResponseBeanProtocol.h */,
+				141177A1ACA3AD3368278FC63CC2077C /* Pod */,
+				9A6B09537B9616CE5E3DA615469DEBA8 /* Support Files */,
 			);
-			name = iOS;
+			name = TheNetwork;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -231,7 +243,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -242,16 +254,6 @@
 				2790F704BA714864CE9266BA2775147F /* Pods-TheNetworkDemo */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DDE2CBC2395C99A0616EAB5A4A41F39F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				2842067B65A517B3F55C4EDC3BB3F7C5 /* LICENSE */,
-				3F157A22FF97350C01CEE4BDC133BAF9 /* README.md */,
-				75F7C36F2D41718E73485A4F5DE2674A /* TheNetwork.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,11 +283,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9059117345899C7AF0F835C7BA9EF746 /* Headers */ = {
+		C266DC2492D6226E78C9A5EF01B79F9C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0597DE0AE7DBC098099244F1EBEB9894 /* Pods-TheNetworkDemo-umbrella.h in Headers */,
+				8A1E39ED5450367B7199AF224CC83D48 /* Pods-TheNetworkDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,17 +296,17 @@
 /* Begin PBXNativeTarget section */
 		059414B53B5998E4F9ACE00358052751 /* Pods-TheNetworkDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF43CF26B38BB9D28D4EA17F1A8CB824 /* Build configuration list for PBXNativeTarget "Pods-TheNetworkDemo" */;
+			buildConfigurationList = 7112D2D66539D9CA48CD610DBA265D68 /* Build configuration list for PBXNativeTarget "Pods-TheNetworkDemo" */;
 			buildPhases = (
-				9059117345899C7AF0F835C7BA9EF746 /* Headers */,
-				1ADC32E0EEB1FB24ED00CD9934F94299 /* Sources */,
-				86A46FB42434C31E23FE0DB76C844DC4 /* Frameworks */,
-				EF3940AE28C7118D39DBA465AE0C681B /* Resources */,
+				C266DC2492D6226E78C9A5EF01B79F9C /* Headers */,
+				0002448FA6AAFB835AF66289CC7D8051 /* Sources */,
+				AE5BE922718BFA69AF7B395995E8D964 /* Frameworks */,
+				4E36FDEA2620385BFDFE56B0024CC495 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C2114FBFFFFAABA3A5AD6A3E08CCA5C5 /* PBXTargetDependency */,
+				7D249DBCC7D3783A127EB14F26BAA782 /* PBXTargetDependency */,
 			);
 			name = "Pods-TheNetworkDemo";
 			productName = "Pods-TheNetworkDemo";
@@ -344,6 +346,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 6521A6BDCD8101276E7B2664E9ADC8A5 /* Products */;
@@ -357,14 +360,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		814C64FFABEED6D1670AE8950ACCD508 /* Resources */ = {
+		4E36FDEA2620385BFDFE56B0024CC495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF3940AE28C7118D39DBA465AE0C681B /* Resources */ = {
+		814C64FFABEED6D1670AE8950ACCD508 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,11 +377,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1ADC32E0EEB1FB24ED00CD9934F94299 /* Sources */ = {
+		0002448FA6AAFB835AF66289CC7D8051 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B192505A0FF882814E7F8D1941E6608E /* Pods-TheNetworkDemo-dummy.m in Sources */,
+				B0C56E542A75AB8EC08B341AD91076DA /* Pods-TheNetworkDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,19 +407,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C2114FBFFFFAABA3A5AD6A3E08CCA5C5 /* PBXTargetDependency */ = {
+		7D249DBCC7D3783A127EB14F26BAA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TheNetwork;
 			target = 17A7F1F4C4E2AC543F5857ABC5B2ECFF /* TheNetwork */;
-			targetProxy = AB90B55EF3D808EACAB7E2B7202D99E0 /* PBXContainerItemProxy */;
+			targetProxy = 3845F9B3CEA6CB012E82FE90FABCEE74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		32C2FB3BD9A2402E2347CE50F405010A /* Release */ = {
+		0082FC00BCCBFCAA63AA5C98EA587C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -439,97 +443,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		48844459AB5FB270DBEDC4A49565A66C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BED9053D2E818C8F213E97BE490D2EFF /* TheNetwork.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TheNetwork/TheNetwork-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TheNetwork/TheNetwork-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TheNetwork/TheNetwork.modulemap";
-				PRODUCT_MODULE_NAME = TheNetwork;
-				PRODUCT_NAME = TheNetwork;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		65E8432CA1AC1817F746BE6B5C4F067E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -568,46 +482,13 @@
 			};
 			name = Debug;
 		};
-		85F82876D854937F37A1D0925DFBC9FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BED9053D2E818C8F213E97BE490D2EFF /* TheNetwork.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TheNetwork/TheNetwork-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TheNetwork/TheNetwork-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TheNetwork/TheNetwork.modulemap";
-				PRODUCT_MODULE_NAME = TheNetwork;
-				PRODUCT_NAME = TheNetwork;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9CDD5FFF6C2DAE6F8FBC17B373FA7964 /* Release */ = {
+		36E3147C64BFC481517AE30E6130BF26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4482D74F5785A887F251682288AECEF /* Pods-TheNetworkDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -636,14 +517,44 @@
 			};
 			name = Release;
 		};
-		BF92E489DCF2354021C5744909B47215 /* Debug */ = {
+		857FA5854736A88CC25E4275E69D5444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5FB19BD7111BB3CEAD12CC580C84DA /* TheNetwork.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TheNetwork/TheNetwork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TheNetwork/TheNetwork-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TheNetwork/TheNetwork.modulemap";
+				PRODUCT_MODULE_NAME = TheNetwork;
+				PRODUCT_NAME = TheNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9EFE94AD02658DAE3FE2E7337A532E69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2565E971346EBA41CF0886524B5FFD78 /* Pods-TheNetworkDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -671,14 +582,115 @@
 			};
 			name = Debug;
 		};
+		E5B12AB88A4F6C443C963D290ECB2428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FF23B8F3359D3D0609D9F161050420F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8033968A1BB221A4A8CC2DEABAFE69F6 /* TheNetwork.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TheNetwork/TheNetwork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TheNetwork/TheNetwork-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TheNetwork/TheNetwork.modulemap";
+				PRODUCT_MODULE_NAME = TheNetwork;
+				PRODUCT_NAME = TheNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65E8432CA1AC1817F746BE6B5C4F067E /* Debug */,
-				32C2FB3BD9A2402E2347CE50F405010A /* Release */,
+				0082FC00BCCBFCAA63AA5C98EA587C17 /* Debug */,
+				E5B12AB88A4F6C443C963D290ECB2428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7112D2D66539D9CA48CD610DBA265D68 /* Build configuration list for PBXNativeTarget "Pods-TheNetworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFE94AD02658DAE3FE2E7337A532E69 /* Debug */,
+				36E3147C64BFC481517AE30E6130BF26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -686,17 +698,8 @@
 		7C2843394C5C2A5FE158F4ECA62CECF8 /* Build configuration list for PBXNativeTarget "TheNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48844459AB5FB270DBEDC4A49565A66C /* Debug */,
-				85F82876D854937F37A1D0925DFBC9FD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BF43CF26B38BB9D28D4EA17F1A8CB824 /* Build configuration list for PBXNativeTarget "Pods-TheNetworkDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BF92E489DCF2354021C5744909B47215 /* Debug */,
-				9CDD5FFF6C2DAE6F8FBC17B373FA7964 /* Release */,
+				FF23B8F3359D3D0609D9F161050420F1 /* Debug */,
+				857FA5854736A88CC25E4275E69D5444 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

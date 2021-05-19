@@ -20,6 +20,8 @@ NSInteger const kRequestInterval = 10;
 
 @interface TheNetworkCenter()
 
+@property (nonatomic,strong) NSMutableArray *inExecutionRequestList;
+
 @end
 
 @implementation TheNetworkCenter
@@ -54,6 +56,9 @@ NSInteger const kRequestInterval = 10;
     
     TheNetworkRequest *handle = [self convertHandle:model];
     if (![self prepareHandle:handle]) {
+        return;
+    }
+    if ([self checkForbiddenSendRepeat:handle]) {
         return;
     }
     NSString *url = handle.bean.actualParams[@"apiUrl"];
@@ -195,7 +200,35 @@ NSInteger const kRequestInterval = 10;
     !handle.finally?:handle.finally();
 }
 
+#pragma mark - lazy load
+// 禁止同一时间重复请求的url临时存放在这里
+- (NSMutableArray *)inExecutionRequestList
+{
+    if (!_inExecutionRequestList) {
+        _inExecutionRequestList = [[NSMutableArray alloc] init];
+    }
+    return _inExecutionRequestList;
+}
+
 #pragma mark - util
+- (BOOL)checkForbiddenSendRepeat:(TheNetworkRequest *)request
+{
+    if (![request isKindOfClass:TheNetworkRequest.class]) return YES;
+    if (request.forbiddenSendRepeat) {
+        NSString *url = request.bean.actualParams[@"apiUrl"];
+        if ([self.inExecutionRequestList containsObject:url]) return YES;
+        [self.inExecutionRequestList addObject:url];
+        
+        __weak __typeof__(self) __weak_self__ = self;
+        RequestFinally finally = request.finally;
+        request.finally = ^{
+            [__weak_self__.inExecutionRequestList removeObject:url];
+            !finally?:finally();
+        };
+    }
+    return NO;
+}
+
 + (NSDictionary *)convertParameter:(TheNetworkRequest *)handle
 {
     NSMutableDictionary *parameter = [handle.bean.actualParams mutableCopy];

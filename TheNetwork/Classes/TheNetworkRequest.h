@@ -26,6 +26,7 @@ typedef NSDictionary *(^ RequestIntent)(void);
 
 // 响应结果模型类，不配置的话默认所有ResultCode都为ResultCodeSucceed
 @property (nonatomic,strong) Class<TheResponseBeanProtocol> responseBeanType;
+@property (nonatomic) BOOL forbiddenSendRepeat;
 
 @property (nonatomic,copy) RequestAbandon abandon; // 当返回NO时请求数据结果将被弃用
 @property (nonatomic,copy) RequestAbandon start;

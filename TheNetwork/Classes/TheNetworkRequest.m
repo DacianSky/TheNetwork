@@ -32,6 +32,7 @@
 {
     TheNetworkRequest *model = [[[self class] alloc] init];
     model.bean = self.bean;
+    model.forbiddenSendRepeat = self.forbiddenSendRepeat;
     model.abandon = self.abandon;
     model.start = self.start;
     model.forceUseLocalData = self.forceUseLocalData;

@@ -40,13 +40,13 @@
     _apiContext = apiContext;
     switch (_apiContext) {
         case TheApiContextDevelopment:
-            self.baseApi = @"https://dev.openapi.war3.ml";
+            self.baseApi = @""; // self.baseApi = @"https://dev.openapi.war3.ml";
             break;
         case TheApiContextTest:
-            self.baseApi = @"https://test.openapi.war3.ml";
+            self.baseApi = @""; //self.baseApi = @"https://test.openapi.war3.ml";
             break;
         default:
-            self.baseApi = @"https://openapi.war3.ml";
+            self.baseApi = @"";  // self.baseApi = @"https://openapi.war3.ml";
             break;
     }
     [self configAllHttpApi];
