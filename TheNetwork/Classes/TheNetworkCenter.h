@@ -24,6 +24,14 @@ void sendRequest(TheNetworkRequest *request);
 // 具体网络发送请求类，具体方法在此处实现
 @property (nonatomic,strong) id<TheRequestHandleProtocol> network;
 
+// 请求过程中延后除白名单外的请求
+@property (nonatomic,assign) BOOL requestDenied;
+@property (nonatomic,strong,readonly) NSMutableArray *bufferedQueue;
+@property (nonatomic,strong,readonly) NSMutableArray *requestWhiteList;
+- (void)bufferRequest:(TheNetworkRequest *)request;
+- (void)resolveAllRequest;
+- (void)rejectAllRequest;
+
 // 设置缓存类，缓存类为nil时缓存配置项将无法生效
 @property (nonatomic,strong) id<TheNetworkCacheProtocol> networkCachePool;
 - (void)clearCache;

@@ -22,6 +22,9 @@ NSInteger const kRequestInterval = 10;
 
 @property (nonatomic,strong) NSMutableArray *inExecutionRequestList;
 
+@property (nonatomic,strong,readwrite) NSMutableArray *bufferedQueue;
+@property (nonatomic,strong,readwrite) NSMutableArray *requestWhiteList;
+
 @end
 
 @implementation TheNetworkCenter
@@ -61,11 +64,16 @@ NSInteger const kRequestInterval = 10;
     if ([self checkForbiddenSendRepeat:handle]) {
         return;
     }
+    
     NSString *url = handle.bean.actualParams[@"apiUrl"];
     id parameter = [self.class convertParameter:handle];
     
+    if (self.requestDenied && ![self.requestWhiteList containsObject:url]) {
+        return [self bufferRequest:handle];
+    }
+    
     __weak __typeof__(self) __weak_self__ = self;
-    [self.network sendRequest:model url:url parameters:parameter progress:^(NSProgress *progress) {
+    [self.network sendRequest:handle url:url parameters:parameter progress:^(NSProgress *progress) {
         !handle.processing?:handle.processing(progress);
     } success:^(id responseObject) {
         [__weak_self__ success:responseObject handle:handle];
@@ -201,6 +209,22 @@ NSInteger const kRequestInterval = 10;
 }
 
 #pragma mark - lazy load
+- (NSMutableArray *)bufferedQueue
+{
+    if (!_bufferedQueue) {
+        _bufferedQueue = [@[] mutableCopy];
+    }
+    return _bufferedQueue;
+}
+
+- (NSMutableArray *)requestWhiteList
+{
+    if(!_requestWhiteList){
+        _requestWhiteList = [[NSMutableArray alloc] init];
+    }
+    return _requestWhiteList;
+}
+
 // 禁止同一时间重复请求的url临时存放在这里
 - (NSMutableArray *)inExecutionRequestList
 {
@@ -227,6 +251,26 @@ NSInteger const kRequestInterval = 10;
         };
     }
     return NO;
+}
+
+- (void)bufferRequest:(TheNetworkRequest *)handle
+{
+    !handle.suspend?:handle.suspend();
+    [self.bufferedQueue addObject:handle];
+}
+
+- (void)resolveAllRequest
+{
+    while(self.bufferedQueue.count) {
+        TheNetworkRequest *request = [self.bufferedQueue firstObject];
+        [self.bufferedQueue removeObject:request];
+        sendRequest(request);
+    }
+}
+
+- (void)rejectAllRequest
+{
+    [self.bufferedQueue removeAllObjects];
 }
 
 + (NSDictionary *)convertParameter:(TheNetworkRequest *)handle
